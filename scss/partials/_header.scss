@@ -1,0 +1,93 @@
+// Header SCSS
+
+
+@media only screen and (max-width: 600px){
+#header {
+	
+	width: 100%;
+	background-color: $secondary-color;
+	max-width:1020px;
+		
+    nav {
+    	//float: right;
+		padding-top:1em;
+		margin:0 auto;
+		ul{
+		-webkit-padding-start: 0px;
+			margin:0 2%;
+		
+    	li {
+			list-style-type:none;
+			@include border-radius(14px);
+			background-color: $primary-color;
+			margin: .2em 0;
+			padding: .2em .4em;
+			text-align:center;
+			
+			a{ 
+				text-decoration:none;
+				color: $accent-color;	
+			}
+			a:hover{
+				color: $secondary-color;
+			}
+    	  }
+		}
+	  }
+	}
+	
+	h1{
+		color: $title-color;
+		font:$title-font;
+		font-size:4em;
+		margin:0 auto;
+		padding:0 2%;
+		text-align:center;
+		
+	   }
+}
+
+
+@media only screen and (min-width: 601px){
+#header {
+	width: 100%;
+	background-color: $secondary-color;
+	max-width:1020px;
+	
+    nav {
+    	float: right;
+		padding-top:1em;
+		margin-right:4%;
+		
+    	li {
+			display:inline;
+    		float: left;
+			list-style-type:none;
+			border-right: 1px solid $accent-color;
+			
+			padding: .2em .4em;
+			
+			a{ 
+				text-decoration:none;
+				color: $detail-color;
+		
+			}
+			a:hover{
+				color: $primary-color;
+			}
+    	}
+				
+	}
+	
+	h1{
+		color: $title-color;
+		font:$title-font;
+		font-size:4em;
+		margin:0 auto;
+		padding:0 2%;
+		margin-left:2%;
+		
+		
+	}
+}
+}

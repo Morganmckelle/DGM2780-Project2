@@ -1,0 +1,125 @@
+/* Phone Scss Document */
+
+$primary-color: #bfa89d;
+$secondary-color:#614b3d;
+$accent-color: #952f21;
+$detail-color: #eacb82;
+$text-color: #2c2017;
+$title-color: #e0d6cf;
+$main-font: 100% 'Open Sans', sans-serif;
+$title-font: 100% 'Shadows Into Light Two', cursive;
+
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+ }
+ 
+ body{
+	 background-color: $primary-color;
+	 font: $main-font;
+	margin:0; 
+
+}
+ .container{
+	background-color:  $accent-color;
+	min-width:320px;
+	max-width: 1020px;
+	margin:0 auto;
+	
+	.bannerimg img{
+		$width: 12/12 *100%;
+		width: $width;
+				  }
+	
+	  .wrapper{
+		margin:0 2%;
+		max-width:940px;
+
+	    #content{
+		  max-width:940px;
+		  margin: 0 auto; 
+			
+	      h2.Header{
+		     color: $detail-color;
+		     border-bottom: 1px solid $secondary-color;
+		     font-size:2em;
+		     }
+		  h2.secondhead{
+		  	 @extend.Header;
+		  	 font-size: 1.5em;
+		  	 border-bottom: none;
+		               }
+			
+		  p.books{
+		  color:$primary-color;
+		  line-height:1.9em;
+		         }
+
+		  .images{
+		  	width:80%;
+		  	margin:0 auto;
+			  
+		  		ul{
+		  			list-style-type: none;
+		  			-webkit-padding-start:0;
+					
+		  			li{
+		  				img{
+		  				width:100%;
+		  				margin:.4em auto;
+		  			       }
+		  			  }
+			      }
+				}	
+	
+			}
+
+		.splitcontent{
+			background-color:$secondary-color;
+			margin:2%;
+			padding:2%;
+			@include border-radius(4px);
+			border:1px solid $primary-color;
+			box-shadow: 2px 2px 6px 2px #2f1408;
+		 		p{
+				@extend.books;
+				 }
+					}
+	 }
+	#footer{
+		@extend #header;
+		padding:.6em 0;
+		text-align: center;
+		margin-top:1%;
+		ul{
+	    -webkit-padding-start: 0px;
+		
+			li.footerlink:not(:first-child){
+				border-left: 1px solid $accent-color;
+				}
+			.footerlink{
+				display:inline-block;
+				list-style-type:none;
+				padding: 0 .4em;
+			
+				a{ 
+					text-decoration:none;
+					color: $detail-color;
+					border:none;	
+				}
+				a:hover{
+					color: $primary-color;
+				       }
+					}
+			    }
+			}
+}
+
+.clear:after{
+	content:"";
+	clear:both;
+	display:table;
+	
+} 

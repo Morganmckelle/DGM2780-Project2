@@ -1,0 +1,57 @@
+/* Desktop Scss Document */
+
+.container{
+	
+	.wrapper{
+		max-width:940px;
+		margin:0 auto;
+	
+		#content{
+		width:100%;
+		
+			.images{
+				width:100%;
+				ul{
+					margin:0 auto;
+				  li{
+				  	display:inline-block;
+				  	float:left;
+				  	padding:1.8%;
+				  	max-width:200px;
+				  	$width: 3/12 *100%;
+				  	width:$width;
+				  	margin:0 auto;
+				  
+				 	 img{	
+				 	 width:100%;
+				 	    }
+	                 }
+		          }
+	            }
+			.splitcontent:first-of-type	{
+				margin-left:0px;
+		}
+			.splitcontent{
+				margin:0 0 0 7%;
+				padding:1%;
+				float:left;	
+				width:44%;
+		
+		
+			   .bookclubs{
+			   	clear:none;
+			   	
+			   }
+			 
+			   .bookclubs , .hotoffthepress{
+			   	display:block;
+			   	-webkit-margin-before:0em;
+										   }
+                           }
+			.splitcontent: nth-child(2){
+				margin-left:2%;
+			}	
+	 
+          }
+       }
+}

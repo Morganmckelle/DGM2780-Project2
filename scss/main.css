@@ -1,0 +1,15 @@
+/* Scss Document */
+/* Phone Scss Document */
+.container {
+  background-color: #ae9d93; }
+
+@media only screen and (min-width: 600px) {
+  /* Tablet Scss Document */ }
+@media only screen and (min-width: 960px) {
+  /* Desktop Scss Document */ }
+#header nav {
+  float: right; }
+  #header nav li {
+    float: left; }
+
+/*# sourceMappingURL=main.css.map */

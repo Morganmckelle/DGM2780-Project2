@@ -1,0 +1,29 @@
+/* Tablet Scss Document */
+
+#content{
+	
+	.images{
+		display:inline-block;
+		width:100%;
+		
+			ul{
+			
+				li{
+				padding:2%;
+				float:left;
+				width:46%;
+					
+					img{
+					margin:0 auto;
+					width:100%;
+					   }
+			 	  }
+			  }
+		  }
+	
+
+.columns{
+	margin:0 auto;
+	max-width:940px;
+}
+}

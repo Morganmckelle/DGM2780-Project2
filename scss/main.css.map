@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;AAQC,UAAU;EACV,gBAAgB,EAPD,OAAO;;ACEvB,yCAAyC;;AAGzC,yCAAwC;;ACHpC,WAAI;EACH,KAAK,EAAE,KAAK;EAEZ,cAAG;IACF,KAAK,EAAE,IAAI",
+"sources": ["partials/_phone.scss","main.scss","partials/_header.scss"],
+"names": [],
+"file": "main.css"
+}
